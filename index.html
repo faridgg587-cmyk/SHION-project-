@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shion Project - Ke Arah Kecemerlangan Masa Depan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.4s ease;
+        }
+
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 scroll-smooth">
+
+    <!-- Navigasi -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-graduation-cap text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-indigo-900">SHION<span class="text-indigo-600">PROJECT</span></span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#utama" class="hover:text-indigo-600 transition">Utama</a>
+                <a href="#tentang" class="hover:text-indigo-600 transition">Tentang Kami</a>
+                <a href="#akademik" class="hover:text-indigo-600 transition">Akademik</a>
+                <a href="#fasiliti" class="hover:text-indigo-600 transition">Fasiliti</a>
+                <a href="#hubungi" class="bg-indigo-600 text-white px-5 py-2.5 rounded-full hover:bg-indigo-700 transition">Daftar Sekarang</a>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-2xl text-indigo-900">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="utama" class="hero-gradient text-white pt-24 pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-indigo-500/20 px-4 py-2 rounded-full border border-indigo-400/30">
+                    <span class="w-2 h-2 bg-indigo-400 rounded-full animate-ping"></span>
+                    <span class="text-xs font-semibold tracking-wider uppercase">Pendaftaran Sesi 2026 Kini Dibuka</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                    Membina <span class="text-indigo-400">Generasi</span> Berinovasi & Berintegriti
+                </h1>
+                <p class="text-indigo-100 text-lg leading-relaxed max-w-lg">
+                    Shion Project bukan sekadar sekolah, ia adalah ekosistem pembelajaran yang menggabungkan teknologi moden dengan nilai-nilai murni untuk membentuk masa depan pelajar yang gemilang.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#akademik" class="bg-white text-indigo-900 px-8 py-4 rounded-xl font-bold hover:bg-indigo-50 transition flex items-center gap-2">
+                        Terokai Kurikulum <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                    <button class="bg-indigo-700/50 backdrop-blur-sm border border-indigo-500/30 px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition">
+                        Tonton Video Profil
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-indigo-500 rounded-full blur-[100px] opacity-20"></div>
+                <img src="https://images.unsplash.com/photo-1523050853063-91589436026e?q=80&w=800" alt="Pelajar Shion Project" class="rounded-3xl shadow-2xl relative z-10 border-4 border-white/10">
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl z-20 hidden md:block">
+                    <div class="flex items-center gap-4">
+                        <div class="flex -space-x-3">
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200"></div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-indigo-400"></div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
+                        </div>
+                        <div>
+                            <p class="text-slate-900 font-bold text-sm">1,200+ Pelajar</p>
+                            <p class="text-slate-500 text-xs">Telah Berjaya Bergraduasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Statistik Singkat -->
+    <section class="max-w-7xl mx-auto px-6 -mt-16 relative z-30">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-8 rounded-3xl shadow-xl text-center">
+                <h3 class="text-3xl font-bold text-indigo-600 mb-1">98%</h3>
+                <p class="text-slate-500 text-sm font-medium">Kadar Kelulusan</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl text-center">
+                <h3 class="text-3xl font-bold text-indigo-600 mb-1">50+</h3>
+                <p class="text-slate-500 text-sm font-medium">Kelab & Persatuan</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl text-center">
+                <h3 class="text-3xl font-bold text-indigo-600 mb-1">15:1</h3>
+                <p class="text-slate-500 text-sm font-medium">Nisbah Pelajar-Guru</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl text-center">
+                <h3 class="text-3xl font-bold text-indigo-600 mb-1">A+</h3>
+                <p class="text-slate-500 text-sm font-medium">Akreditasi Kebangsaan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi & Misi -->
+    <section id="tentang" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-indigo-600 font-bold tracking-widest text-xs uppercase mb-3">Kenali Kami</h2>
+            <h3 class="text-4xl font-bold text-slate-900">Kenapa Shion Project Berbeza?</h3>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-10 rounded-3xl border border-slate-100 card-hover">
+                <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 text-indigo-600 text-2xl">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4">Teknologi Pendidikan</h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Setiap pelajar dibekalkan dengan akses kepada platform pembelajaran digital terkini untuk memudahkan eksplorasi ilmu.
+                </p>
+            </div>
+            <div class="bg-indigo-600 p-10 rounded-3xl text-white shadow-xl shadow-indigo-200 card-hover">
+                <div class="w-14 h-14 bg-indigo-500 rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4">Pembangunan Sahsiah</h4>
+                <p class="text-indigo-100 leading-relaxed">
+                    Kami menekankan keseimbangan antara kecerdasan intelektual dan emosi bagi melahirkan insan yang beradab.
+                </p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border border-slate-100 card-hover">
+                <div class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 text-indigo-600 text-2xl">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-4">Standard Global</h4>
+                <p class="text-slate-600 leading-relaxed">
+                    Kurikulum kami dirangka mengikut piawaian antarabangsa bagi memastikan pelajar mampu bersaing di peringkat dunia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Akademik -->
+    <section id="akademik" class="bg-slate-900 py-24 px-6 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-indigo-400 font-bold tracking-widest text-xs uppercase mb-3 text-left">Pendidikan Kami</h2>
+                    <h3 class="text-4xl font-bold mb-8">Pilih Laluan Kejayaan Anak Anda</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition cursor-default">
+                            <div class="text-3xl text-indigo-400"><i class="fas fa-child"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Sekolah Rendah (Sains & Kreatif)</h4>
+                                <p class="text-slate-400 text-sm">Menekankan asas Sains, Teknologi, Kejuruteraan, dan Matematik (STEM) secara santai.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition cursor-default">
+                            <div class="text-3xl text-indigo-400"><i class="fas fa-user-graduate"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Sekolah Menengah (Inovasi Digital)</h4>
+                                <p class="text-slate-400 text-sm">Fokus kepada pengekodan, reka bentuk digital, dan kepimpinan keusahawanan.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition cursor-default">
+                            <div class="text-3xl text-indigo-400"><i class="fas fa-brain"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Pusat Kecemerlangan Shion</h4>
+                                <p class="text-slate-400 text-sm">Program intensif selepas sekolah untuk persediaan peperiksaan dan olimpiad sains.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=400" alt="Bilik Darjah" class="rounded-2xl mt-8">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=400" alt="Makmal Robotik" class="rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef1460370e?q=80&w=400" alt="Perpustakaan" class="rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?q=80&w=400" alt="Sukan" class="rounded-2xl -mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hubungi / Pendaftaran -->
+    <section id="hubungi" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="bg-indigo-600 rounded-[3rem] p-8 md:p-16 relative overflow-hidden shadow-2xl">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+            <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center text-white">
+                <div>
+                    <h3 class="text-4xl font-bold mb-6">Bersedia Untuk Sertai Keluarga Kami?</h3>
+                    <p class="text-indigo-100 mb-8 leading-relaxed">
+                        Dapatkan sesi konsultasi percuma bersama kaunselor akademik kami atau datang melawat kampus Shion Project pada hari terbuka.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-map-marker-alt text-indigo-300"></i>
+                            <span>No. 123, Jalan Pendidikan, Cyberjaya, Selangor</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-phone text-indigo-300"></i>
+                            <span>+60 3-8888 7777</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-indigo-300"></i>
+                            <span>info@shionproject.edu.my</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-3xl text-slate-900 shadow-xl">
+                    <h4 class="text-xl font-bold mb-6">Borang Pertanyaan Pantas</h4>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="text-xs font-bold text-slate-500 uppercase">Nama Penuh Ibu Bapa</label>
+                            <input type="text" placeholder="Contoh: Ahmad bin Ali" class="w-full bg-slate-50 border border-slate-200 p-3 rounded-xl mt-1 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-slate-500 uppercase">E-mel</label>
+                            <input type="email" placeholder="ahmad@gmail.com" class="w-full bg-slate-50 border border-slate-200 p-3 rounded-xl mt-1 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-slate-500 uppercase">Program Pilihan</label>
+                            <select class="w-full bg-slate-50 border border-slate-200 p-3 rounded-xl mt-1 focus:ring-2 focus:ring-indigo-500 outline-none">
+                                <option>Sekolah Rendah</option>
+                                <option>Sekolah Menengah</option>
+                                <option>Pusat Kecemerlangan</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white p-4 rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-100">
+                            Hantar Permohonan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
+                        <i class="fas fa-graduation-cap text-sm"></i>
+                    </div>
+                    <span class="text-lg font-bold tracking-tight text-indigo-900">SHION<span class="text-indigo-600">PROJECT</span></span>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                    Melahirkan pemimpin masa depan melalui pendidikan berkualiti tinggi dan bimbingan yang komprehensif.
+                </p>
+                <div class="flex gap-4 text-slate-400">
+                    <a href="#" class="hover:text-indigo-600 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-indigo-600 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-indigo-600 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="hover:text-indigo-600 transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h5 class="font-bold mb-6">Pautan Pantas</h5>
+                <ul class="space-y-4 text-sm text-slate-500 font-medium">
+                    <li><a href="#" class="hover:text-indigo-600 transition">Kalendar Akademik</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">Portal Ibu Bapa</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">Peluang Kerjaya</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">Dasar Privasi</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h5 class="font-bold mb-6">Penerbitan</h5>
+                <ul class="space-y-4 text-sm text-slate-500 font-medium">
+                    <li><a href="#" class="hover:text-indigo-600 transition">Buletin Shion</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">Blog Pendidikan</a></li>
+                    <li><a href="#" class="hover:text-indigo-600 transition">E-Majalah Sekolah</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold mb-6">Langgan Buletin</h5>
+                <p class="text-slate-500 text-xs mb-4">Dapatkan info terkini mengenai aktiviti sekolah kami.</p>
+                <div class="flex">
+                    <input type="email" placeholder="E-mel anda" class="bg-slate-50 border border-slate-200 py-3 px-4 rounded-l-xl w-full focus:outline-none">
+                    <button class="bg-indigo-600 text-white p-3 rounded-r-xl"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-400 text-xs">© 2026 Shion Project Educational Institution. Hak Cipta Terpelihara.</p>
+            <p class="text-slate-400 text-xs">Dikuasakan oleh Gemini AI</p>
+        </div>
+    </footer>
+
+</body>
+</html>
